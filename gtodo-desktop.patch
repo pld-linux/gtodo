@@ -1,0 +1,14 @@
+diff -urN aaa/gtodo-0.13.5/gtodo.desktop gtodo-0.13.5/gtodo.desktop
+--- aaa/gtodo-0.13.5/gtodo.desktop	2003-10-07 21:10:46.000000000 +0200
++++ gtodo-0.13.5/gtodo.desktop	2003-12-12 23:29:56.000000000 +0100
+@@ -12,8 +12,9 @@
+ Comment[sr]=Алат за држање роковника
+ Comment[sr@Latn]=Alat za držanje rokovnika
+ Exec=gtodo
+-Terminal=0
++Terminal=false
+ Type=Application
+ Icon=gtodo.png
+ Categories=GNOME;Application;Utility;
+ StartupNotify=true
++Encoding=UTF-8
