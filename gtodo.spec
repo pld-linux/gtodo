@@ -7,7 +7,7 @@ License:	GPL
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	480574f7db89bea7a437a77caa411156
-Patch0:		%{name}.desktop.patch
+Patch0:		%{name}-desktop.patch
 URL:		http://qballcow.nl/gtodo/
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
