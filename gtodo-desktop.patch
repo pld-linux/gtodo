@@ -1,0 +1,13 @@
+diff -urN gtodo-0.14.orig/gtodo.desktop.in gtodo-0.14/gtodo.desktop.in
+--- gtodo-0.14.orig/gtodo.desktop.in	2005-04-29 11:02:33.000000000 +0200
++++ gtodo-0.14/gtodo.desktop.in	2005-04-29 11:09:26.000000000 +0200
+@@ -5,6 +5,6 @@
+ Terminal=false
+ Type=Application
+ Icon=gtodo.png
+-Categories=Application;Office;
++Categories=GTK:GNOME;Office;
+ StartupNotify=true
+-Encoding=UTF-8
+\ Brak znaku nowej linii na koñcu pliku
++Encoding=UTF-8
