@@ -2,17 +2,19 @@ Summary:	A todo list application
 Summary(pl):	Program zarz±dzaj±cy list± spraw do zrobienia
 Name:		gtodo
 Version:	0.14
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Development/Tools
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gtodo/%{name}-%{version}.tar.gz
 # Source0-md5:	51f5d71c51374931a24cce1839402457
-URL:		http://qballcow.nl/gtodo/
+Patch0:		%{name}-desktop.patch
+URL:		http://qballcow.nl/index.php?name=gtodo
 BuildRequires:	GConf2-devel
 BuildRequires:	gnome-vfs2-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
-Requires(post):	GConf2
+BuildRequires:	rpmbuild(macros) >= 1.197
+Requires(post,preun):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,11 +26,11 @@ spraw do zrobienia.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure \
 	--disable-schemas-install
-
 %{__make}
 
 %install
@@ -44,7 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%gconf_schema_install
+%gconf_schema_install gtodo.schemas
+
+%preun
+%gconf_schema_uninstall gtodo.schemas
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
