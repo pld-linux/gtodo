@@ -2,7 +2,7 @@ Summary:	A todo list application
 Summary(pl):	Program zarz±dzaj±cy list± spraw do zrobienia
 Name:		gtodo
 Version:	0.14
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/gtodo/%{name}-%{version}.tar.gz
