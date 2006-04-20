@@ -6,7 +6,7 @@ diff -urN gtodo-0.14.orig/gtodo.desktop.in gtodo-0.14/gtodo.desktop.in
  Type=Application
  Icon=gtodo.png
 -Categories=Application;Office;
-+Categories=GTK:GNOME;Office;
++Categories=GTK;GNOME;Office;
  StartupNotify=true
 -Encoding=UTF-8
 \ Brak znaku nowej linii na koñcu pliku
