@@ -1,5 +1,5 @@
 Summary:	A todo list application
-Summary(pl):	Program zarz±dzaj±cy list± spraw do zrobienia
+Summary(pl.UTF-8):   Program zarzÄ…dzajÄ…cy listÄ… spraw do zrobienia
 Name:		gtodo
 Version:	0.14
 Release:	3
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 gToDo is as the name suggests a todo list application.
 
-%description -l pl
-gToDo, jak sama nazwa wskazuje, jest programem zarz±dzaj±cym list±
+%description -l pl.UTF-8
+gToDo, jak sama nazwa wskazuje, jest programem zarzÄ…dzajÄ…cym listÄ…
 spraw do zrobienia.
 
 %prep
