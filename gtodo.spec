@@ -1,5 +1,5 @@
 Summary:	A todo list application
-Summary(pl.UTF-8):   Program zarządzający listą spraw do zrobienia
+Summary(pl.UTF-8):	Program zarządzający listą spraw do zrobienia
 Name:		gtodo
 Version:	0.14
 Release:	3
